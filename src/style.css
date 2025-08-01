@@ -9,24 +9,10 @@ body {
 }
 
 body {
-  height: 100%;
-  width: 100%;
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-img {
-  width: 350px; /* set width */
-  height: auto; /* keep aspect ratio */
-}
-
-h1 {
-  font-family: "New Gothic Style";
-  letter-spacing: 2rem;
-  color: red;
-  padding-left: 2rem;
 }
 
 .container {
@@ -41,19 +27,55 @@ h1 {
 /* Small devices (phones in portrait mode) */
 @media (min-width: 320px) {
   /* Styles for small devices */
+  img {
+    width: 275px;
+    height: auto;
+  }
+
   h1 {
-    font-size: 3rem;
+    font-family: "New Gothic Style";
+    color: red;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
   }
 }
 
 /* Medium devices (phones in landscape mode or smaller tablets) */
 @media (min-width: 480px) {
   /* Styles for medium devices */
+  img {
+    width: 350px;
+    height: auto;
+  }
+
+  h1 {
+    font-family: "New Gothic Style";
+    color: red;
+    font-size: 3rem;
+    letter-spacing: 2rem;
+    padding-left: 1.75rem;
+    padding-top: 1rem;
+  }
 }
 
 /* Larger phones or small tablets */
 @media (min-width: 600px) {
   /* Styles for larger phones or small tablets */
+  img {
+    width: 400px;
+    height: auto;
+  }
+
+  h1 {
+    font-family: "New Gothic Style";
+    color: red;
+    font-size: 4rem;
+    letter-spacing: 2rem;
+    padding-left: 1.75rem;
+    padding-top: 1rem;
+  }
 }
 
 /* Tablets */
@@ -64,9 +86,6 @@ h1 {
 /* Small desktop or large tablets in landscape */
 @media (min-width: 1024px) {
   /* Styles for small desktops or larger tablets */
-  h1 {
-    font-size: 6rem;
-  }
 }
 
 /* Laptops and desktops */
