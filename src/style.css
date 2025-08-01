@@ -2,11 +2,48 @@
 
 /* Add global styles here */
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 350px; /* set width */
+  height: auto; /* keep aspect ratio */
+}
+
+h1 {
+  font-family: "New Gothic Style";
+  letter-spacing: 2rem;
+  color: red;
+  padding-left: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
 /* Breakpoints for responsive css */
 
 /* Small devices (phones in portrait mode) */
 @media (min-width: 320px) {
   /* Styles for small devices */
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 /* Medium devices (phones in landscape mode or smaller tablets) */
@@ -27,6 +64,9 @@
 /* Small desktop or large tablets in landscape */
 @media (min-width: 1024px) {
   /* Styles for small desktops or larger tablets */
+  h1 {
+    font-size: 6rem;
+  }
 }
 
 /* Laptops and desktops */
@@ -42,4 +82,10 @@
 /* Very large screens */
 @media (min-width: 1920px) {
   /* Styles for very large screens (4K and above) */
+}
+
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
