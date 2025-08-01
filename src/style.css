@@ -103,8 +103,14 @@ body {
   /* Styles for very large screens (4K and above) */
 }
 
+/* UTILITY STYLES */
 .no-select {
   user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+}
+
+/* CURSOR */
+* {
+  cursor: url(https://cur.cursors-4u.net/symbols/sym-2/sym147.cur), auto !important;
 }
